@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import axios from 'axios';
 
-const API_URL = 'http://task-manager-app-production-f89c.up.railway.app';
+const API_URL = 'https://task-manager-app-production-f89c.up.railway.app/api';
 
 export default function App() {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || null);
